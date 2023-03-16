@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Demo2018" Class="HmfModelDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=N2482;Initial Catalog=Demo2018;Persist Security Info=True;User ID=sa" SettingsObjectName="mplerpsw.Properties.Settings" SettingsPropertyName="Demo2018ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="SSCommon.vKontrahenci" Member="vKontrahencis">
+    <Type Name="vKontrahenci">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="guid" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Column Name="kod" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="nazwa" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="nip" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="limit" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="limitKwota" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="limitWaluta" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="aktywny" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="znacznik" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="rodzaj" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="katalog" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="idKraju" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="miejscowosc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="rejon" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="kodpocz" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="SSCommon.vAdresyKh" Member="vAdresyKhs">
+    <Type Name="vAdresyKh">
+      <Column Name="idkh" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nazwaAdr" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="ulica" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="dom" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="lokal" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="miejscowosc" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="kodpocz" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="kraj" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="HM.TW" Member="TWs">
+    <Type Name="TW">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="flag" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="aktywny" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="subtyp" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="typ" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="znacznik" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="rodzaj" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="katalog" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="info" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="kod" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="nazwa" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="kodpaskowy" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="vatsp" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sww" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="zaokrag" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="idlongname" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="kontofk" Type="System.String" DbType="VarChar(24) NOT NULL" CanBeNull="false" />
+      <Column Name="metoda" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="przelicz" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="szablon" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="nazwaFiskal" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="jmdod1" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="przeljmdod1" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="jmdod2" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="przeljmdod2" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="stanmin" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="stanmax" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="typks" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="jm" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="jmdef" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="jmdom" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="przeljmdom" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="negoc" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="super" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="createdBy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="createdDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="modifiedBy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="modifiedDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="pcn" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="przelkg" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="przeluz" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="przelit" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="jmuzup" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="fundusz" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="odwrotneObc" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="vat50" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Association Name="TW_TW" Member="TWs" ThisKey="id" OtherKey="rodzaj" Type="TW" />
+      <Association Name="TW_TW" Member="TW1" ThisKey="rodzaj" OtherKey="id" Type="TW" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="HM.SF_PRICEBOOKS" Member="SF_PRICEBOOKs">
+    <Type Name="SF_PRICEBOOK">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UnitPrice" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="CurrencyIsoCode" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Lookup_Pricebook" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="Lookup_ProductCode" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="HM.SF_ACCOUNTS" Member="SF_ACCOUNTs">
+    <Type Name="SF_ACCOUNT">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SFDCRecordID" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="EM_Account_Number__c" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="BillingStreet" Type="System.String" DbType="NVarChar(82)" CanBeNull="true" />
+      <Column Name="BillingPostalCode" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="BillingCity" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="BillingStateCode" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="BillingCountryCode" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Fax" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Website" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="EM_eMail_Address__c" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CurrencyIsoCode" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="EM_Sort_Indicator__c" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="EM_Customer_since__c" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="EM_Symphony_RMS__c" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="EM_Webshop_Customer__c" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="EM_Rental_Customer__c" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="EM_Delivery_Order_block__c" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="EM_Credit_Limit__c" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="EM_Payment_Terms__c" Type="System.String" DbType="VarChar(111) NOT NULL" CanBeNull="false" />
+      <Column Name="EM_Status__c" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="EM_Language__c" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="EM_Customer_Type__c" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="EM_Subtype__c" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="EM_Former_Account_Number__c" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Lookup_Buying_Group_Account_Number" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="Lookup_Pricebook" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="Lookup_RecordType" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="Lookup_Parent_Account_Number" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="EM_TAX_ID_Number__c" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="EM_Local_Currency__c" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="EM_Sales_Rep__c" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mplerpsw_configuration" Member="mplerpsw_configurations">
+    <Type Name="mplerpsw_configuration">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FKey" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Value" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.mplerpsw_rights" Member="mplerpsw_rights">
+    <Type Name="mplerpsw_right">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="UserPassword" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CheckOrder" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreateSalesOrder" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="GetPricingForQuote" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="GetPricingForOrder" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SF_PRICEBOOKS_GROSS" Member="SF_PRICEBOOKS_GROSSes">
+    <Type Name="SF_PRICEBOOKS_GROSS">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NettUnitPrice" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="GrossUnitPrice" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="vat" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="typ" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CurrencyIsoCode" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Lookup_Pricebook" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="Lookup_ProductCode" Type="System.String" DbType="VarChar(40) NOT NULL" CanBeNull="false" />
+      <Column Name="nazwa" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="stan" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TwId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SF_ACTIVITIES_LOG" Member="SF_ACTIVITIES_LOGs">
+    <Type Name="SF_ACTIVITIES_LOG">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="typOperacji" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="operacja" Type="System.String" DbType="NVarChar(130) NOT NULL" CanBeNull="false" />
+      <Column Name="dataOperacji" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="[user]" Member="user" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="PlikXML" Type="System.Xml.Linq.XElement" DbType="Xml" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Function Name="HM.hm_GetUpustIndyw" Method="hm_GetUpustIndyw">
+    <Parameter Name="idPm" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idPd" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idRodzPm" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idRodzPd" Type="System.Int32" DbType="Int" />
+    <Parameter Name="aktywna" Type="System.Int16" DbType="SmallInt" />
+    <Parameter Name="typ" Type="System.Int16" DbType="SmallInt" />
+    <ElementType Name="hm_GetUpustIndywResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="idPm" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="idPd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="aktywna" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="typ" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="subtyp" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="cena" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="waluta" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="datastart" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sf_InsertSFDCOrderNumber" Method="sf_InsertSFDCOrderNumber">
+    <Parameter Name="ZOid" Parameter="zOid" Type="System.Int32" DbType="Int" />
+    <Parameter Name="SFDCOrderNumber" Parameter="sFDCOrderNumber" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

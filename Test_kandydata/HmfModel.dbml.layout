@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 13.375" name="HmfModel">
+  <DataContextMoniker Name="/HmfModelDataContext" />
+  <nestedChildShapes>
+    <classShape Id="32f5eef2-2ba3-4f84-8711-87c4147b5b95" absoluteBounds="1.75, 0.5, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/HmfModelDataContext/vKontrahenci" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d6e458b4-7806-44dd-98ff-a6c509619960" absoluteBounds="1.7650000000000006, 0.96, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2477c5fc-b585-469c-b156-87608c30966b" absoluteBounds="4.625, 0.625, 2, 2.5401025390625">
+      <DataClassMoniker Name="/HmfModelDataContext/vAdresyKh" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b5e7cf60-56e1-4a45-b86b-92fe6aa0c18e" absoluteBounds="4.64, 1.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="450be93f-82b5-4110-8135-3d217cae4aa2" absoluteBounds="7.125, 0.625, 2, 9.6552555338541648">
+      <DataClassMoniker Name="/HmfModelDataContext/TW" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ea568087-e361-429b-be4b-669ae71fd070" absoluteBounds="7.14, 1.085, 1.9700000000000002, 9.0952555338541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.83423076923077 : 10.2802555338542); (7.83423076923077 : 10.5302555338542); (8.42961538461539 : 10.5302555338542); (8.42961538461539 : 10.2802555338542)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/HmfModelDataContext/TW/TW_TW" />
+      <nodes>
+        <classShapeMoniker Id="450be93f-82b5-4110-8135-3d217cae4aa2" />
+        <classShapeMoniker Id="450be93f-82b5-4110-8135-3d217cae4aa2" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="62dd29ff-f940-4e86-b3b8-4f23621576b2" absoluteBounds="4.625, 3.5, 2, 1.9631982421875">
+      <DataClassMoniker Name="/HmfModelDataContext/SF_PRICEBOOK" />
+      <nestedChildShapes>
+        <elementListCompartment Id="28da0e8a-e1f8-4e41-a904-6b141393adf1" absoluteBounds="4.64, 3.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="35442815-7414-4689-8d62-51547fe3911a" absoluteBounds="1.875, 4.5, 2, 7.3476383463541657">
+      <DataClassMoniker Name="/HmfModelDataContext/SF_ACCOUNT" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ae5e70f7-a1f3-4a42-b9bb-6265fc77290a" absoluteBounds="1.8899999999999997, 4.96, 1.9700000000000002, 6.7876383463541661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="45db3118-e499-4095-b1c1-233e04fba1d6" absoluteBounds="4.625, 5.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/HmfModelDataContext/mplerpsw_configuration" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3505e99c-631d-4e89-bf9d-0b699be1659a" absoluteBounds="4.64, 6.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7ca557d6-7847-46a6-b482-75954919b1c2" absoluteBounds="4.625, 7.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/HmfModelDataContext/mplerpsw_right" />
+      <nestedChildShapes>
+        <elementListCompartment Id="327897e8-b3aa-44ec-b9c0-0ee926bb6187" absoluteBounds="4.64, 7.8350000000000009, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="62776bef-baef-4876-bb6b-a030169ed666" absoluteBounds="4.75, 10, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/HmfModelDataContext/SF_PRICEBOOKS_GROSS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="822754c8-846b-42b0-9f9f-4afca2f27d83" absoluteBounds="4.765, 10.46, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="436ce87d-4c04-4aa2-ab35-f6ce3b01c3e6" absoluteBounds="7.25, 10.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/HmfModelDataContext/SF_ACTIVITIES_LOG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fccdc181-ad1c-4287-88fc-e2118186bfb4" absoluteBounds="7.2650000000000006, 11.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
